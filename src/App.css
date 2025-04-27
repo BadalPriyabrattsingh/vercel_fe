@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff8f0;
+  color: #333;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  color: white;
+  padding: 60px 20px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+/* Back to Birthday Animation Button */
+.back-to-birthday-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ff6ec4;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-birthday-btn:hover {
+  background-color: #e65c5c;
+}
+
+/* Back to Birthday Animation Button */
+.back-to-birthday-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #ff6ec4;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-birthday-btn:hover {
+  background-color: #e65c5c;
+}
+
+.gallery h2 {
+  margin-top: 20px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px;
+}
+
+.photo-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+}
+
+.wishes h2 {
+  margin-top: 50px;
+}
+
+.messages p {
+  background: #ffe0ec;
+  margin: 10px auto;
+  padding: 15px;
+  width: 80%;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+  animation: fall linear infinite;
+  z-index: 999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.mute-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ff6ec4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.mute-btn:hover {
+  background-color: #e65c5c;
+}
+/* Add to your CSS file */
+.back-to-wishes-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff9a9e;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-wishes-btn:hover {
+  background-color: #fad0c4;
+}
+/* Add this to your CSS file */
+.play-audio-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #ff9a9e;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.play-audio-btn:hover {
+  background-color: #fad0c4;
+}

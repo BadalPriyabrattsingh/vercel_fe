@@ -1,0 +1,26 @@
+/* Default image styling */
+.responsive-image {
+    width: 100%;
+    height: auto; /* Preserve aspect ratio */
+    object-fit: cover; /* Maintain image's aspect ratio and crop if necessary */
+  }
+  
+  /* Example of more specific dynamic styling for different screen sizes */
+  @media (max-width: 600px) {
+    .responsive-image {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .responsive-image {
+      width: 80%;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .responsive-image {
+      width: 50%;
+    }
+  }
+  

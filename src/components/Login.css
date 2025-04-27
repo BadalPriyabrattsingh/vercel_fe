@@ -1,0 +1,32 @@
+.login-container {
+    margin-top: 100px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  button {
+    background: #ff6ec4;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  

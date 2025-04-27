@@ -1,0 +1,218 @@
+/* Overall Page Layout */
+.page-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  /* Side Navigation Menu */
+  .side-nav {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .side-nav button {
+    width: 100%;
+    padding: 15px;
+    background-color: #444;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .side-nav button:hover {
+    background-color: #ff6ec4;
+  }
+  
+  .side-nav .back-button {
+    background-color: #6c757d;
+  }
+  
+  .side-nav button:focus {
+    outline: none;
+  }
+  
+  /* Gallery Section */
+  .gallery-container {
+    margin-left: 250px; /* Make space for the side nav */
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Gallery Grid */
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .gallery-grid.show-all {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Image Style */
+  .gallery-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.5) rotate(15deg);
+    animation: fadeInBounce 1s ease forwards;
+    animation-delay: 0.5s;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Animation for each image */
+  @keyframes fadeInBounce {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) rotate(15deg);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.05) rotate(-5deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  
+  /* Hover Effect */
+  .gallery-image:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Buttons */
+  .gallery-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background-color: #ff6ec4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e65c5c;
+    transform: translateY(-3px);
+  }
+  
+  button:active {
+    transform: translateY(1px);
+  }
+  
+  .back-button {
+    background-color: #6c757d;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Styling for the Back to Wishes button */
+.back-to-wishes-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6ec4;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-wishes-button:hover {
+    background-color: #e65c5c;
+  }
+  
+  .back-to-wishes-button:focus {
+    outline: none;
+  }
+  /* Styling for the Wishes */
+.gallery-wishes {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  /* Optional: Style for the gallery grid container */
+  .gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  /* Styling for the Back to Birthday button */
+.back-to-birthday-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ff6ec4;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .back-to-birthday-button:hover {
+    background-color: #e65c5c;
+  }
+  
+  .back-to-birthday-button:focus {
+    outline: none;
+  }
+  
