@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Typical from 'react-typical';
+
 import './BirthdayAnimation.css';
 import bgImage from '../assets/bg_image.jpg';  // Import the image
 
@@ -15,15 +15,11 @@ const BirthdayAnimation = ({ onOpenGallery }) => {
     <div className="animation-container" style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="clouds"></div>
       <h1>🎉 To my best friend, Madhu! 🎉</h1>
-      <Typical
-        steps={[
-          'Every moment with you is a blessing...✨', 5000,
-          'Happy Birthday, buddi! Here’s to many more years of trust! 🎂', 5000,
-        ]}
-        loop={1}  // Only loop once
-        wrapper="p"
-        onFinishedTyping={handleTypingComplete}  
-      />
+      
+      {/* Static text to replace the typing animation */}
+      <p>Every moment with you is a blessing...✨</p>
+      <p>Happy Birthday, buddi! Here’s to many more years of trust! 🎂</p>
+      
       {animationComplete && (
         <div className="next-steps">
           {/* Insert your next steps or components here */}
