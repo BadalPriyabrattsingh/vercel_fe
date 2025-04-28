@@ -45,7 +45,7 @@ const Gallery = ({ galleryName, goBackToMenu, goToAnotherGallery, goBackToBirthd
   };
 
   useEffect(() => {
-    // Show all images with animation after 1 second
+   
     setTimeout(() => {
       document.querySelector('.gallery-grid').classList.add('show-all');
     }, 1000);
